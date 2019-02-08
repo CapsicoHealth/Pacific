@@ -1,0 +1,53 @@
+<!--
+/* ===========================================================================
+ * Copyright (C) 2019 CapsicoHealth, Inc.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+
+<% if(users.length > 0){ %>
+  <div>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Email</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Roles</th>
+          <th>Login Count</th>
+          <th>Last Login</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% for(i=0;i< users.length; i++) { %>
+          <% item = users[i] %>
+          <tr>
+            <td><%= item.personId %></td>
+            <td><%= item.nameFirst %></td>
+            <td><%= item.nameLast %></td>
+            <td><%= item.roles %></td>
+            <td><%= item.loginCount %></td>
+            <td><%= item.lastLogin %></td>
+          </tr>
+        <% } %>
+      </tbody>
+    </table>
+  </div>
+<% } else { %>
+  
+  <div>
+    <CENTER><h4>No users in the system.</h4></CENTER>
+  </div>
+  
+<% } %>

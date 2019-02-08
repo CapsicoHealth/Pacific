@@ -1,0 +1,45 @@
+/* ===========================================================================
+ * Copyright (C) 2019 CapsicoHealth, Inc.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+.FormContainer{
+  .tileLayoutRow{
+    overflow: visible !important;
+  }
+}
+
+.Radio_OFF, .Radio_OFF:link, .Radio_OFF:visited, Radio_ON, .Radio_ON:link, .Radio_ON:visited {
+   background-position: 3px 1px;
+}
+
+.Checkbox_OFF, .Checkbox_OFF:link, .Checkbox_OFF:visited, .Checkbox_ON, .Checkbox_ON:link, .Checkbox_ON:visited {
+   background-position: 3px 3px;
+}
+
+.tileHeader .actions {
+  top: unset;
+}
+
+.tileHeader { 
+  padding: 10px 5px 10px 1px;
+}
+
+.actions a {
+  padding: 2vh 1vw 2vh 1vw;
+}
+
+.users_list_container {
+  padding: 3vh;
+}

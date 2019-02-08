@@ -1,0 +1,39 @@
+<!--
+/* ===========================================================================
+ * Copyright (C) 2019 CapsicoHealth, Inc.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+
+<div class="outer">
+  <div class="middle">
+    <div class="inner">
+      <div class="row">
+        <form class="loginTable loginForm">
+          <div class="row"><input id="email"    type="text"     class="password" name="email" placeholder="Please enter your login id" value=""></div>
+          <div class="row"><input id="password" type="password" class="password" name="pswd"  placeholder="Please enter your password" value=""></div>
+          <div class="row"><button class="btn btn-default login-submit-btn" id="login" type="submit">Continue</button></div>
+        </form>
+      </div>
+      <div class="row">
+        <img class="logo-img" src="img/bg/logo.png">
+      </div>
+      <div class="copy-right">
+        <i class="fa fa-copyright"></i>
+        &copy; CapsicoHealth Inc., <%= strftime("%Y", new Date()) %>, version: <%= version %>
+      </div>
+
+    </div>
+  </div>
+</div>
